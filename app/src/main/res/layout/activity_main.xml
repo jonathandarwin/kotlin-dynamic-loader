@@ -9,15 +9,42 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/btn_loading"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Show Loading"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="50dp"
-            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/tv_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enable Blocking Loader"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@id/switch_mode"
+                android:layout_marginBottom="10dp"
+                />
+
+            <Switch
+                android:id="@+id/switch_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/btn_loading"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                />
+
+            <Button
+                android:id="@+id/btn_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Loading"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="50dp"
+                />
+
+        </RelativeLayout>
 
     </RelativeLayout>
 
